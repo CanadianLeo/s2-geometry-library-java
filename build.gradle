@@ -3,6 +3,11 @@ repositories {
     mavenLocal()
     mavenCentral()
 }
+test {
+    filter {
+        includeTestsMatching "*Test"
+    }
+}
 
 dependencies {
     compile group: 'com.google.guava', name: 'guava', version: 'r09'
